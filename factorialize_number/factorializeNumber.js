@@ -1,0 +1,39 @@
+/*--- Code Challenge: Factorialize a number ---*/
+
+
+// function factorialize(num) {
+//   "use strict";
+//   var factorial = 1;
+//   for (let i = 1; i <= num; i++ ) {
+//   factorial *=  i;
+//   }
+//   console.log(factorial);
+//   return factorial;
+// }
+
+const factorialize2 = num => {
+  let factorial = 1;
+  for (let i = 1; i <= num; i++ ) {
+  factorial *=  i;
+  }
+  console.log(factorial);
+  return factorial;
+}
+
+// factorialize(5);
+// // should return 120
+//
+// factorialize(10);
+// // should return 3628800
+//
+// factorialize(20);
+// // should return 2432902008176640000
+
+factorialize2(5);
+// should return 120
+
+factorialize2(10);
+// should return 3628800
+
+factorialize2(20);
+// should return 2432902008176640000
