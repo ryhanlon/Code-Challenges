@@ -1,4 +1,4 @@
-### Coding Comparisons between Python and Javascript
+### Coding Comparisons between Python and JavaScript
 
 #### Code Challage: *Reverse a String*
 
@@ -27,8 +27,12 @@ def reverse_string(string: str) -> str:
 
 ```
 
+
+#### JavaScript examples
+JS requires more steps in order to resverse the string.  I used a method chain, which required less code and was very readable. ```.split().reverse().join()``` and stored the result in the variable *splitString*.
+
 #### JavaScript 6 example
-In JavaScript I used an _arrow function_.
+This example is a arrow function expression. Replaced the key word *function* with the arrow function.
 ```javascript
 const reverseString = str => {
     // split string, reverse array, join array into string
@@ -38,4 +42,17 @@ const reverseString = str => {
   return splitString;
 
 };
+```
+
+#### JavaScript 5.1 example
+This example is a function declaration.
+```javascript
+
+function reverseString(str) {
+  // split string, reverse array, join array into string
+  var splitString = str.split('').reverse().join('');
+
+  return splitString;
+
+}
 ```
