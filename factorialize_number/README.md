@@ -36,7 +36,7 @@ Used a *for loop*, ```for (statement 1; statement 2; statement 3)```.
 + **Statement 2** defines the condition for the loop to run ```(i must be less then num)```
 + **Statement 3** increases a value ```(i++)``` each time the code block in the loop has been executed
 
-Then multiplied the the integer in the factorial variable by i.
+Then multiplied the the integer in the factorial variable by *i*.
 #### JavaScript 6 example
 ```javascript
 
