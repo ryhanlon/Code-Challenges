@@ -18,7 +18,7 @@ const factorialize2 = num => {
   }
   console.log(factorial);
   return factorial;
-}
+};
 
 // factorialize(5);
 // // should return 120
