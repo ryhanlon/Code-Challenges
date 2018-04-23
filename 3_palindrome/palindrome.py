@@ -46,5 +46,5 @@ def palindrome(string: str) -> Bool:
     :return:
     """
     string_lower = string.lower()
-    string_reversed =
+    string_clean =
 
