@@ -20,6 +20,20 @@ const factorialize2 = num => {
   return factorial;
 };
 
+// recursion
+// const factorialize = num => {
+//   // termination
+//   if(num < 0) return;
+
+//   // base
+//   if(num === 0) return 1;
+
+//   // recursion
+//   return num * factorialize(num - 1);
+// }
+
+
+
 // factorialize(5);
 // // should return 120
 //
