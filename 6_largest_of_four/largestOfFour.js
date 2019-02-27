@@ -5,7 +5,7 @@
 // 2 dementional array
 
 
-
+// version: 1  | for loop
 function largestOfFour1(arr) {
   // store the results
   let results = [];
@@ -29,7 +29,7 @@ function largestOfFour1(arr) {
   return results;
 }
 
-// version: 2
+// version: 2  |  forEach loop, .reduce(), Math.max()
 const largestOfFour2 = (arr) => {
   let largestNums = [];
   arr.forEach(group => {
@@ -37,9 +37,9 @@ const largestOfFour2 = (arr) => {
     largestNums.push(highestNum);
   });
   console.log(largestNums);
-}
+};
 
-// // version: 3
+// // version: 3  | forEach loop, .sort()
 const largestOfFour3 = (arr) => {
   let largestNums = [];
   arr.forEach(group => {
@@ -47,9 +47,9 @@ const largestOfFour3 = (arr) => {
     largestNums.push(lastIndex[lastIndex.length - 1]);
   });
   console.log(largestNums);
-}
+};
 
-// version: 4
+// version: 4  | for Each loop, Math.max(...) with spread operator
 const largestOfFour4 = (arr) => {
   let largestNums = [];
   arr.forEach(group => {
@@ -58,6 +58,16 @@ const largestOfFour4 = (arr) => {
   });
   console.log(largestNums);
 };
+
+// version: 5 | for of loop, Math.max(...) spread operator
+const largestOfFour5 = arr => {
+  let largestNums = [];
+  for(let newArr of arr) {
+    largestNums.push(Math.max(...newArr))
+  }
+  console.log(largestNums);
+};
+
 
 // version 1 doc tests
 largestOfFour1([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
@@ -101,6 +111,15 @@ largestOfFour4([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 8
 
 largestOfFour4([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]);
 // should return [9, 35, 97, 1000000]
+
+// version 5 doc tests
+largestOfFour5([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+// should return [5, 27, 39, 1001]
+
+largestOfFour5([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
+// should return [27,5,39,1001]
+
+largestOfFour5([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]);
 
 
 // explore:
