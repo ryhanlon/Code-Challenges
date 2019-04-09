@@ -7,6 +7,8 @@ function bouncer(arr) {
 // return console.log(arr.filter(value => value));
 // }
 
+
+
 // not working for NaN
 // function bouncer(arr) {
 // return console.log(arr.filter(value => value !== false && value !== "" && value !== null && value !== 0 && value !== isNaN(true) && value !== undefined));
